@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.283.1.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Formulario de Inscripción</h1>
+    <form id="inscripcionForm">
+        <input type="text" id="firstName" name="firstName" placeholder="Nombres" required>
+        <input type="text" id="lastName" name="lastName" placeholder="Apellidos" required>
+        <input type="text" id="idNumber" name="idNumber" placeholder="Número de Cédula" required>
+        <input type="email" id="email" name="email" placeholder="Correo" required>
+        <input type="file" id="file-upload" name="photo" required>
+        <button type="submit">Inscribirse</button>
+    </form>
+
+    <h2>Lista de Registros</h2>
+    <ul id="registrosList"></ul>
+
+    <h2>Galería de Imágenes</h2>
+    <div id="galeria"></div>
+</body>
+</html>
